@@ -1,0 +1,1239 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #fe4507;
+    background: cover;
+}
+
+.homenav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 160px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.input1 option {
+    height: 40px;
+    width: 80px;
+    background-color: white;
+    color: orange;
+}
+
+.homenav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin-top: 50px;
+}
+
+.btn1 {
+    background-color: #fe4507;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    height: 60px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.btn2 {
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    height: 60px;
+    width: 150px;
+    margin-top: 50px;
+}
+
+.homehead h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0px;
+}
+
+.homehead {
+    margin-top: 80px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.input1 {
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border-color: none;
+    font-family: 'Popins', 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.input2 {
+    height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    border-color: none;
+    font-family: 'Popins', 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.homecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.homecard1 {
+    width: 500px;
+    height: 280px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.homeheads {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 20px;
+    gap: 0px;
+}
+
+.homeheads h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.homeheads h5 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.homeheads p {
+    font-size: 15px;
+    color: #fe4507;
+    margin: 0px;
+    font-weight: bold;
+    height: 25px;
+    width: 150px;
+    background-color: #fbddd3;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-left: 15px;
+    margin-top: 90px;
+}
+
+.btn button {
+    background-color: #fe4507;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.homecard2 {
+    width: 500px;
+    height: 280px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.image {
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 300px;
+    width: 350px;
+}
+
+.home img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+}
+
+
+/* this is the food page css */
+
+.foodpage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    padding: 10px;
+}
+
+.foodpage h1 {
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+.foodpage1 {
+    width: 90vw;
+    min-height: 80vh;
+    background-color: white;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.foodcard {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foodcard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.foodcard h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.food-details {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    margin-top: 0%;
+}
+
+.food-details h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    padding-top: 55px;
+    margin-top: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.restaurant-card {
+    flex: 0 0 calc(25% - 20px);
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.restaurant-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.restaurant-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.appcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.foodnavbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    /* margin-right: 230px; */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: #1a1a1a;
+}
+
+.foodnavbar a {
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding-top: 0%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.foodnavbar a:hover {
+    color: #fe4507;
+}
+
+.food-detailshead h2 {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.foodnavimg img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-right:; */
+    cursor: pointer;
+    padding-right: 600px;
+}
+
+.foodnavbarheader h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    font-size: 16px;
+    margin-right: 150px;
+    margin-left: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.foodnavbarheader h1:hover {
+    color: #fe4507;
+    cursor: pointer;
+}
+
+
+/* footer page css */
+
+.footerpart1 {
+    margin-right: 35px;
+}
+
+.footerpart1 h1 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footerpart1 p {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footerpart2 {
+    margin-right: 35px;
+}
+
+.footerpart2 h1 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footerpart2 p {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footersection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: rgb(25, 25, 25);
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.image p {
+    line-height: 0%;
+    padding-left: 15px;
+}
+
+.footerpart1 img {
+    display: inline;
+    height: 20px;
+    width: 20px;
+    gap: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footersection2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footersection2 h1 {
+    font-size: 25px;
+    color: black;
+    margin-left: 225px;
+    margin-top: 60px;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+
+.footer {
+    height: 80vh;
+    background-color: #e3e2e2;
+}
+
+.headline {
+    width: 90%;
+}
+
+.footersection2 img {
+    height: 65px;
+    width: 150px;
+    margin-right: 15px;
+    margin-top: 45px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.headimage img {
+    height: 60px;
+    width: 170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* padding-top: 25px; */
+    /* padding-left: 150px; */
+    padding-right: 450px;
+    margin-top: 50px;
+}
+
+.homecards img {
+    padding-bottom: 10px;
+}
+
+.footerofdetails {
+    width: 100%;
+}
+
+.appbanner img {
+    height: 40vh;
+    width: 100%;
+}
+
+.restuarants-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+/* another one */
+
+
+/* Dineout Section Styles - 4 Cards Per Row */
+
+
+/* Section Container */
+
+.dineout-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+
+/* Section Title */
+
+.dineout-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dineout-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff6200;
+    /* Orange underline to match Dineout theme */
+}
+
+
+/* Grid Layout - 4 Cards Per Row */
+
+.dineout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 10px;
+}
+
+
+/* Individual Restaurant Card */
+
+.dineout-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+
+/* Special Badge (e.g., GIRF SPECIAL) */
+
+.dineout-card.special .special-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6200;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Restaurant Image */
+
+.dineout-card .restaurant-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.dineout-card .restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dineout-card .placeholder {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #888;
+    background-color: #f0f0f0;
+}
+
+
+/* Card Content */
+
+.dineout-card .card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Header - Name & Rating */
+
+.dineout-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.dineout-card .name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.3;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dineout-card .rating {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dineout-card .stars {
+    margin-left: 2px;
+    font-size: 10px;
+}
+
+
+/* Cuisines */
+
+.dineout-card .cuisines {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* Cost & Location Row */
+
+.dineout-card .cost-location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.dineout-card .cost {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dineout-card .location {
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* Distance & Time Row */
+
+.dineout-card .distance-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dineout-card .distance {
+    color: #888;
+}
+
+.dineout-card .delivery-time {
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+
+/* Table Booking Tags */
+
+.dineout-card .table-booking {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.dineout-card .table-tag {
+    background-color: #e8f5e8;
+    color: #28a745;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Offers Section */
+
+.dineout-card .offers {
+    margin-bottom: 10px;
+}
+
+.dineout-card .offer {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dineout-card .offer-icon {
+    width: 12px;
+    height: 12px;
+    background-color: #ff6200;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.dineout-card .offer-text {
+    color: #1a1a1a;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dineout-card .more-offers {
+    color: #ff6200;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2px;
+}
+
+
+/* Loading State */
+
+.dineout-card.loading {
+    background-color: #f5f7fa;
+    height: 400px;
+}
+
+
+/* Ensure consistent card height */
+
+.dineout-grid {
+    align-items: start;
+}
+
+.cities-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Basic Layout */
+
+.home {
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: orange;
+    color: white;
+}
+
+.signin-btn {
+    background: white;
+    color: #ff6200;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Overlay Background (dark blur) */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+    z-index: 10;
+}
+
+
+/* Sliding Panel */
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 31%;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    transition: right 0.4s ease;
+    z-index: 20;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel.open {
+    right: 0;
+}
+
+
+/* Close Button */
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 33px;
+    align-self: flex-start;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+/* Sliding Panel */
+
+.side-panel2 {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 31%;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease;
+    z-index: 20;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel2.open {
+    left: 0;
+}
+
+
+/* Close Button */
+
+.close-btn2 {
+    background: none;
+    border: none;
+    font-size: 33px;
+    align-self: flex-start;
+    cursor: pointer;
+    padding: 0px;
+    margin-left: 450px;
+}
+
+.overlay-container input {
+    height: 40px;
+    width: 300px;
+    /* box-shadow: 2px solid black; */
+    margin-left: 100px;
+    margin-top: 60px;
+    box-shadow: #1a1a1a;
+}
+
+.overlay-container2 h1 {
+    height: 90px;
+    width: 300px;
+    /* box-shadow: 2px solid black; */
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: #1a1a1a;
+    color: black;
+    /* display: flex; */
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.overlay-container2 h1:hover {
+    color: #ff6200;
+    cursor: pointer;
+}
+
+.overlay-container2 {
+    height: 90px;
+    width: 300px;
+    /* box-shadow: 2px solid black; */
+    margin-left: 100px;
+    margin-top: 30px;
+    box-shadow: #1a1a1a;
+    color: black;
+    border: 2px solid black;
+}
+
+.overlay-container2 p {
+    margin-top: 0;
+}
+
+
+/* Signin Form */
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    /* margin-top: 20px; */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    /* margin-top: 20px; */
+}
+
+.signin-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 50px;
+    margin-top: 0%;
+}
+
+.signup-form input {
+    margin-bottom: 0px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 50px;
+    margin-top: 0%;
+}
+
+.signin-form button {
+    background: #ff6200;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 75%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+}
+
+.signup-form button {
+    background: #ff6200;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 75%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    margin-top: 15px;
+}
+
+.signin-form p {
+    font-size: 15px;
+    margin-top: 0px;
+    /* font-weight: bold; */
+}
+
+.signup-form p {
+    cursor: pointer;
+    color: rgb(157, 157, 255);
+}
+
+.highlight {
+    color: #ff6200;
+    line-height: 0%;
+    cursor: pointer;
+}
+
+.image img {
+    height: 100px;
+    width: 100px;
+    /* display: flex; */
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.signinmain {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+}
+
+.signinmain1 {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    width: 100%;
+}
+
+.login-container {
+    width: 550px;
+}
+
+.image {
+    margin-right: 50px;
+}
+
+.partner-container {
+    background-image: url("/PartnerBG.png");
+    background-size: cover;
+    background-position: top;
+    height: 55vh;
+    width: 100vw;
+}
+
+.down-container {
+    height: 45vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.steps-portion {
+    height: 30vh;
+    width: 30vw;
+    background-color: #e0e4f7;
+    padding-left: 35px;
+    border-radius: 10px;
+    margin-top: 35px;
+}
+
+.steps-portion h1 {
+    font-size: 20px;
+}
+
+.steps-portion p {
+    margin-top: 20px;
+}
+
+.para-container1 h1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 0%;
+}
+
+.para-container2 {
+    height: 40vh;
+    width: 35vw;
+    background-color: #f8f9fb;
+    padding-left: 35px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 25px;
+    border: 2px solid black;
+}
+
+.para-container2 h1 {
+    font-size: 20px;
+}
+
+.para-container2 hr {
+    width: 33vw;
+}
+
+.partnerbg {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 50vh;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* padding-top: 5px; */
+}
+
+.formtags {
+    background-color: white;
+    height: 40vh;
+    width: 50vh;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 800px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: absolute;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.formtags h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.infoform input {
+    height: 55px;
+    width: 300px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.infoform button {
+    height: 45px;
+    width: 310px;
+    margin-left: 25px;
+    margin-top: 15px;
+    background-color: #dadada;
+    color: white;
+    font-weight: bold;
+}
+
+.infoform {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoform p {
+    margin-top: 0px;
+    margin-left: 25px;
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+.statements {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 145px;
+    margin-top: 100px;
+    padding: 100px;
+}
+
+.statements p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.partnerimage img {
+    height: 50px;
+    width: 100px;
+}
+
+.partnerimage p {
+    font-size: 15px;
+    margin-top: 0%;
+    margin-left: 10px;
+}

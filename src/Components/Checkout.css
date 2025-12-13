@@ -1,0 +1,167 @@
+/* ------------ PAGE CONTAINER ------------ */
+
+.checkout-container {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    margin-left: 450px;
+    margin-top: 120px;
+}
+
+.checkout-form {
+    /* height: 100vh;
+    width: 100vw; */
+    /* background-color: #676666; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+
+/* Page Title */
+
+.checkout-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.checknav {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1550px;
+}
+
+
+/* ------------ ADDRESS FORM CARD ------------ */
+
+
+/* Input fields styled like Swiggy */
+
+.checkout-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+.checkout-container button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #fafafa;
+    transition: 0.2s;
+    background-color: #ff5200;
+}
+
+.checkout-container input:focus {
+    border-color: #ff5200;
+    outline: none;
+    background: #fff;
+}
+
+
+/* ------------ ORDER SUMMARY CARD ------------ */
+
+.summary-card {
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.summary-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.summary-total {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+}
+
+
+/* ------------ CONFIRM BUTTON ------------ */
+
+.confirm-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #ff5200;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.confirm-btn:hover {
+    background: #e84800;
+}
+
+
+/* ------------ DELIVERY ESTIMATE BANNER (OPTIONAL) ------------ */
+
+.delivery-banner {
+    background: #fff7ed;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #ffe4cc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.delivery-banner-icon {
+    font-size: 20px;
+    color: #ff5200;
+}
+
+.delivery-banner-text {
+    font-size: 14px;
+    color: #82461a;
+    font-weight: 500;
+}
+
+
+/* ------------ RESPONSIVE ------------ */
+
+@media (max-width: 600px) {
+    .checkout-container {
+        padding: 16px;
+    }
+    .confirm-btn {
+        font-size: 15px;
+    }
+}

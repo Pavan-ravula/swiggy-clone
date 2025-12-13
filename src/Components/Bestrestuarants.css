@@ -1,0 +1,225 @@
+.dineout-section {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.dineout-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 260px;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dineout-card {
+    position: relative;
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    transition: transform .2s;
+}
+
+.dineout-card:hover {
+    transform: translateY(-4px);
+}
+
+.special-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff6b35;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.restaurant-image {
+    height: 160px;
+    background: #f0f0f0;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    background: #eee;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    background: #48c479;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.stars {
+    margin-left: 2px;
+}
+
+.cuisines {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.cost-location {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+}
+
+.distance-time {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #888;
+}
+
+.table-booking {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.table-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.offers {
+    margin-top: 8px;
+}
+
+.offer {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #d32f2f;
+    margin-bottom: 2px;
+}
+
+.offer-icon {
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.more-offers {
+    font-size: 11px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.scroll-buttons {
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 12px;
+    pointer-events: none;
+    z-index: 10;
+    gap: 10px;
+    margin-left: 580px;
+    margin-top: 100px;
+}
+
+.scroll-buttons button {
+    width: 40px;
+    height: 40px;
+    /* border-radius: 50%; */
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    transition: background .3s;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.scroll-buttons button:hover {
+    background: rgba(0, 0, 0, .8);
+}
+
+.scroll-buttons .prev-btn {
+    left: 10px;
+}
+
+.scroll-buttons .next-btn {
+    right: 10px;
+}
+
+.dineout-grid::-webkit-scrollbar {
+    display: none;
+}

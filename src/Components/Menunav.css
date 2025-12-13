@@ -1,0 +1,78 @@
+.foodnavbar1 {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 230px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: #1a1a1a;
+}
+
+.foodnavbar1 a {
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding-top: 0%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.foodnavbar1 a:hover {
+    color: #fe4507;
+}
+
+.food-detailshead h2 {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.foodnavimg1 img {
+    height: 100px;
+    /* padding-right: 300px; */
+    margin-right: 100px;
+    width: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-right:; */
+    cursor: pointer;
+    padding-right: 600px;
+}
+
+.foodnavbarheader h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    font-size: 16px;
+    margin-right: 150px;
+    margin-left: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.foodnavbarheader h1:hover {
+    color: #fe4507;
+    cursor: pointer;
+}

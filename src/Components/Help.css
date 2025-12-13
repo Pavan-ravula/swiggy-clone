@@ -1,0 +1,168 @@
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(2, 76, 105);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 190px;
+}
+
+.header-content h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    color: white;
+}
+
+.header-content p {
+    font-size: 25px;
+    margin-top: 0px;
+    color: white;
+}
+
+.white-container {
+    height: 75vh;
+    width: 85vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.left-container {
+    height: 75vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 252);
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 102px;
+    background-color: rgb(219, 219, 252);
+}
+
+.buttons-container button {
+    height: 80px;
+    width: 280px;
+    border: none;
+    border-radius: 0;
+    text-align: start;
+    padding-left: 30px;
+    background-color: rgb(219, 219, 252);
+}
+
+.right-container {
+    height: 75vh;
+    width: 50vw;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.right-container-content1 h1 {
+    font-size: 22px;
+}
+
+.right-container-content1 h1:hover {
+    color: orangered;
+}
+
+.right-container-content1 p {
+    font-size: 17px;
+}
+
+.right-container-content1 p:hover {
+    color: orangered;
+}
+
+
+/* navbar */
+
+.foodnavbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    margin-right: 230px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    height: 80px;
+    width: 115%;
+    background-color: white;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: #1a1a1a;
+    margin-top: 0;
+}
+
+.foodnavbar a {
+    text-decoration: none;
+    color: rgb(14, 14, 14);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding-top: 0%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.foodnavbar a:hover {
+    color: #fe4507;
+}
+
+.food-detailshead h2 {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.foodnavimg img {
+    height: 100px;
+    width: 110px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-right:; */
+    cursor: pointer;
+}
+
+.foodnavbarheader h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: black;
+    font-size: 16px;
+    margin-right: 150px;
+    margin-left: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.foodnavbarheader h1:hover {
+    color: #fe4507;
+    cursor: pointer;
+}
