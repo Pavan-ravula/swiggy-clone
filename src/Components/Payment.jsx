@@ -15,49 +15,50 @@ function Payment() {
 
   const { address, cart } = state;
 
-  // -----------------------------
-  // BACKEND URL
-  // -----------------------------
-  // const API = "https://backend-menu-api-1.onrender.com/order/create-order";
+  // ✅ GET USER FROM LOCALSTORAGE
+  const userId = localStorage.getItem("userId");
 
-  // -----------------------------
-  // SAVE ORDER INTO DATABASE
-  // -----------------------------
   const saveOrderToDB = async () => {
-  try {
-    const res = await fetch("https://backend-menu-api-1.onrender.com/order/create-order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        userId: localStorage.getItem("userId"),
-        address,
-        // items: cart.items,
-        totalAmount: cart.totalPrice,
-        paymentStatus: "Paid",
-        orderDate: new Date()
-      }),
-    });
+    try {
+      const userId=localStorage.getItem("userId");
+      if (!userId?._id) {
+        alert("User not logged in");
+        return;
+      }
 
-    const result = await res.json();
+      const res = await fetch(
+        "https://backend-menu-api-1.onrender.com/order/create-order",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          body: JSON.stringify({
+            userId: userId,              // ✅ FIXED
+            address,
+            items: cart.items,             // ✅ FIXED
+            totalAmount: cart.totalPrice,
+            paymentStatus: "Paid"
+          }),
+        }
+      );
 
-    if (!res.ok) {
-      console.error("Create order failed:", result);
-      alert(result.error || result.message || "Server error while creating order");
-      return;
+      const result = await res.json();
+
+      if (!res.ok) {
+        console.error("Create order failed:", result);
+        alert(result.message || "Server error while creating order");
+        return;
+      }
+
+      console.log("Order saved:", result);
+      navigate("/orders", { replace: true });
+
+    } catch (err) {
+      console.error("Network or client error:", err);
+      alert("Network error while creating order");
     }
+  };
 
-    // success
-    console.log("Order saved:", result);
-    navigate("/orders", { replace: true });
-  } catch (err) {
-    console.error("Network or client error:", err);
-    alert("Network error while creating order");
-  }
-};
-
-
-  // -----------------------------
-  // HANDLE PAYMENT LOGIC
   // -----------------------------
   const handlePayment = (e) => {
     e.preventDefault();
@@ -67,7 +68,6 @@ function Payment() {
     setTimeout(async () => {
       setLoading(false);
       setMessage("Payment Successful!");
-
       await saveOrderToDB();
     }, 1500);
   };

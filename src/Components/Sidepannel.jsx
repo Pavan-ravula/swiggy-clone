@@ -8,7 +8,7 @@ const Sidepannel = ({ open, setOpen }) => {
 
   return (
     <div className={`side-panel ${open ? "open" : ""}`}>
-      <button className="close-btn" onClick={() => setOpen(false)}>×</button>
+      <button className="close-btn" onClick={() => setOpen(false)}> × </button>
 
       {showSignup ? (
         <Signup setShowSignup={setShowSignup} />

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Signin = ({ setShowSignup,setopen }) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [phone, setPhone] = useState("");
 
   const handleLogin = async (e) => {
@@ -21,8 +21,9 @@ const Signin = ({ setShowSignup,setopen }) => {
 
       if (data.success) {
         alert(data.message);
+        localStorage.setItem("userId",data.user._id);
         localStorage.setItem("token", data.token);
-        // navigate("/Home");
+        navigate("/Home");
         setopen(false)
       } else {
         alert(data.message);

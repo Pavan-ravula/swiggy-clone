@@ -42,8 +42,7 @@ function Menu() {
     // dispatch add item to store
     dispatch(addItem(item));
     alert("item added successfully....!!")
-    // optional: navigate to cart after adding, or show toast/snackbar
-    // navigate('/cart');
+    
   }
 
   return (
@@ -55,12 +54,12 @@ function Menu() {
           {items.map((item) => (
             <div className="menu-card" key={item._id}>
               <div className="menu-media">
-                <img src={item.img || "/placeholder.png"} alt={item.name} className="menu-img" />
+                <img src={item.img} alt={item.name} className="menu-img" />
               </div>
 
               <div className="menu-body">
                 <h3 className="menu-name">{item.name}</h3>
-                <p className="menu-serves">Serves: <span>{item.serves || "-"}</span></p>
+                <p className="menu-serves">Serves: <span>{item.serves}</span></p>
               </div>
 
               <div className="menu-footer">

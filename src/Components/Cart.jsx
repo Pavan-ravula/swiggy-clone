@@ -3,18 +3,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { incrementQty, decrementQty, removeItem, clearCart } from '../store/Cartslice';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
-// import Menunavbar from './Menunavbar';
 import Cartnavbar from './Cartnavbar';
 
 function Cart() {
-    // const navigate=useNavigate();
   const cart = useSelector(state => state.cart);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleCheckout = () => {
-    // TODO: implement checkout or navigate to checkout page
-    alert('Proceed to checkout (implement)');
     navigate('/Checkout',{ state: {
       items: cart.items,
       totalPrice: cart.totalPrice,
@@ -41,7 +37,7 @@ function Cart() {
           <div className="cart-list">
             {cart.items.map(item => (
               <div key={item._id} className="cart-item">
-                <img src={item.img || '/placeholder.png'} alt={item.name} className="cart-img" />
+                <img src={item.img} alt={item.name} className="cart-img" />
                 <div className="cart-info">
                   <h3>{item.name}</h3>
                   <p>Price: ₹{item.price}</p>

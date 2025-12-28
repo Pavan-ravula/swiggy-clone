@@ -3,29 +3,20 @@ import { useParams} from "react-router-dom";
 import "./Swiggy.css";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-// import { LuShoppingBag } from "react-icons/lu";
 import { IoMdSearch } from "react-icons/io";
 import { BiSolidOffer } from "react-icons/bi";
 import { FaHandsHelping } from "react-icons/fa";
-// import { LuUserRoundPlus } from "react-icons/lu";
 import { BsCartCheck } from "react-icons/bs";
-// import { MdMyLocation } from "react-icons/md";
 import Help from "./Help";
 import Home from "./Home";
-// import Signup from "./Signup";
-// import Signin from "./Signin";
-// import { useNavigate } from "react-router-dom";
+
 
 function FoodDetails() {
-  // const navigate=useNavigate();
   const { id, text } = useParams();
   const [categoryData, setCategoryData] = useState([]); // initialize as empty array
   const [loading, setLoading] = useState(true);
 
-  // const [open,setopen]=useState(false);
-  // const handleClick=()=>{
-  //   setopen(true);
-  // }
+  
    
   
 
@@ -118,16 +109,6 @@ function FoodDetails() {
             </Link>
           ))}
         </div>
-      {/* {open && <div className="overlay2"></div>}
-            <div className={`side-panel2 ${open ? "open" : ""}`}>
-                <button className="close-btn2" onClick={() => setopen(false)}>×</button>
-                <div className="overlay-container">
-                  <input type="text" placeholder="Search for area,Street name..."/>
-                </div>
-                <div className="overlay-container2">
-                    <h1><MdMyLocation style={{fontSize:"20px"}}/>Get Current Location</h1>
-                </div>
-            </div> */}
       <div className="footerofdetails"><Footer/></div>
     </div>
     
